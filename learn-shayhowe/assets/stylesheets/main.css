@@ -69,6 +69,15 @@ p {
 	display:block;
 }
 
+code {
+  background: #2db34a;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font: 16px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 5px;
+  text-align: center;
+}
 .div_content_box {
 	width:400px;
 	height:200px;
