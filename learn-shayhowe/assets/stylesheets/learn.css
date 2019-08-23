@@ -36,6 +36,10 @@ section {
   float: left;
   width: 63%;
 }
+.section_inline_block {
+	display:inline-block;
+	width:30%;
+}
 aside {
   float: right;
   width: 30%;
