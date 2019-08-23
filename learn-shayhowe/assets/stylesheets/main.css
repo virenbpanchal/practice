@@ -48,21 +48,10 @@ table {
   border-spacing: 0;
 }
 
-.hotdog p.mustard {
-  background: yellow;
-}
-.hotdog p {
-  background: #CCC;
-}
-
-.btn{
-	font-size:16px;
-}
-.btn-danger{
-	background:red;
-}
-.btn-success{
-	background:green;
+.logo {
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+  float: left;
 }
 
 p {
@@ -120,6 +109,24 @@ code {
 
 /*
   ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
   Typography
   ========================================
 */
@@ -152,4 +159,18 @@ h1, h3, h4, h5, p {
 
 .hero {
   padding: 22px 80px 66px 80px;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer small {
+  float: left;
+}
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
 }

@@ -7,6 +7,25 @@ code {
   padding: 24px 15px;
   text-align: center;
 }
+.default {
+  background: none;
+  color: #666;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  background: #eaeaed;
+  border-radius: 6px;
+  clear: both;
+  *zoom: 1;
+}
+.group,
 header,
 section,
 aside,
@@ -22,6 +41,49 @@ aside {
   width: 30%;
 }
 footer {
-  clear: both;
   margin-bottom: 0;
+}
+
+
+.container {
+	margin: 0 auto;
+	padding-left:30px;
+	padding-right:30px;
+	width:960px;
+}
+.div_content_box {
+	width:400px;
+	height:300px;
+	padding:20px;
+	margin:10px;
+	border:5px solid #000;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+.div_border_box {
+	width:400px;
+	height:300px;
+	padding:20px;
+	margin:10px;
+	border:5px solid #000;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.hotdog p.mustard {
+  background: yellow;
+}
+.hotdog p {
+  background: #CCC;
+}
+
+.btn{
+	font-size:16px;
+}
+.btn-danger{
+	background:red;
+}
+.btn-success{
+	background:green;
 }
