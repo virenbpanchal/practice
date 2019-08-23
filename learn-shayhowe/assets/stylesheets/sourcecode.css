@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
-  /*background: hsla(24, 100%, 70%, 0.5);*/
 }
 ol, ul {
   list-style: none;
@@ -48,53 +47,12 @@ table {
   border-spacing: 0;
 }
 
-.hotdog p.mustard {
-  background: yellow;
-}
-.hotdog p {
-  background: #CCC;
-}
-
-.btn{
-	font-size:16px;
-}
-.btn-danger{
-	background:red;
-}
-.btn-success{
-	background:green;
-}
-
-p {
-	display:block;
-}
-
-.div_content_box {
-	width:400px;
-	height:200px;
-	padding:20px;
-	margin:10px;
-	border:5px solid #000;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-}
-.div_border_box {
-	width:400px;
-	height:200px;
-	padding:20px;
-	margin:10px;
-	border:5px solid #000;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 /*
   ========================================
   Grid
   ========================================
 */
+
 *,
 *:before,
 *:after {
@@ -103,10 +61,10 @@ p {
           box-sizing: border-box;
 }
 .container {
-	margin: 0 auto;
-	padding-left:30px;
-	padding-right:30px;
-	width:960px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
 }
 
 /*
