@@ -14,11 +14,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     
+    <style type="text/css">
+	.required {
+		color:#ff4538;
+	}
+	</style>
+    
 </head>
 
 <body>
 
-    <section class="section">
+    <section class="section" id="hello">
         <div class="container">
             <h1 class="title">
             Hello World
@@ -28,19 +34,65 @@
             </p>
         </div>
     </section>
-
+    
     <section class="section">
         <div class="container">
-        	
-            <h1 class="title">https://htmlreference.io/</h1>
+        
+            <div class="notification">
+                <h1 class="title"><a href="https://htmlreference.io/">https://htmlreference.io/</a></h1>
+            </div>
+        
+            <div class="notification">
+                <h1 class="title"><a href="https://htmlreference.io/element/a/">a</a> - Anchor tag</h1>
+                <p class="subtitle">
+                Creates a link to a URL: a web page, a section within a page, an email address... Also called the anchor element, where the a comes from.<br>
+                <br>
+                <span class="required">href</span> - Defines the target of the link.<br>
+                <a href="https://htmlreference.io/element/a/">absolute URL</a><br>
+                <a href="#footer">#footer - target an element within the same page.</a><br>
+                <a href="mailto:hello@virendeveloper.com">You can use the mailto protocol. Clicking the link will open the user's email client.</a><br>
+                <br>
+                target - Defines in which tab or window the clicked link will show up.<br>
+                <a href="https://htmlreference.io/element/a/" target="_blank">_blank - in a new browsing context - new tab</a><br>
+                <a href="https://htmlreference.io/element/a/" target="_self">_self - in current tab</a><br>
+                <a href="https://htmlreference.io/element/a/" target="_parent">_parent - in the parent browsing context</a><br>
+                <a href="https://htmlreference.io/element/a/" target="_top">_top - in the top browsing context</a><br>
+                <br>
+                rel - Defines how the link target relates to the current web page.<br>
+                <a href="https://htmlreference.io/element/a/" rel="nofollow">nofollow - The target is not related. Used for external websites usually.</a>
+                </p>
+            </div>
             
-        	<h1 class="title">a - Anchor tag</h1>
-            <p class="subtitle">
-            <a href="https://htmlreference.io">HTML Reference</a>
-            </p>
+            <div class="notification">
+                <h1 class="title"><a href="https://htmlreference.io/element/abbr/">abbr</a> - Abbreviation tag</h1>
+                <p class="subtitle">Defines an abbreviation, and usually includes its full description<br>
+                <abbr title="HyperText Markup Language">HTML</abbr>
+                </p>
+            </div>
+            
+            <div class="notification">
+                <h1 class="title"><a href="https://htmlreference.io/element/address/">address</a></h1>
+                <p class="subtitle">Defines a block for contact information<br>
+                <address>
+                  Infinite Loop,<br>
+                  Cupertino, CA<br>
+                  95014, USA
+                </address>
+                </p>
+            </div>
         
         </div>
     </section>
+    
+    <footer class="footer" id="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
 
 </body>
 
