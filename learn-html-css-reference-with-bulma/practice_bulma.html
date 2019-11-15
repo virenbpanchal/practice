@@ -18,6 +18,54 @@
 	.required {
 		color:#ff4538;
 	}
+	.example-preview {
+		display: -webkit-box;
+		display: flex;
+	}
+	.example-output {
+		border-width: 1px 0 1px 1px;
+		flex-basis: 0;
+		-webkit-box-flex: 1;
+		flex-grow: 1;
+		flex-shrink: 1;
+		border-color:#ffdd57;
+		border-style: solid;
+		border-width: 1px 1px 0;
+		color:#333;
+		padding: 1rem;
+	}
+	.example-code {
+		flex-basis: 0;
+		-webkit-box-flex: 2;
+		flex-grow: 2;
+		flex-shrink: 2;
+		overflow: auto;
+		/*background:#222;
+		padding: 1rem;*/
+	}
+	.highlight {
+		background-color: #222;
+		color:#f8f8f2;
+	}
+	.example-code pre {
+		font-size: 13px;
+		padding: 0;
+	}
+	pre {
+		white-space: pre;
+		word-wrap: normal;
+	}
+	pre code {
+		font-size: 1em;
+		padding: 0;
+	}
+	code, kbd, samp {
+		font-family: "Inconsolata","Source Code Pro","Consolas","Monaco","Courier",monospace;
+		font-size: 0.9em;
+	}
+	.highlight .nt {
+		color: #f92672;
+	}
 	</style>
     
 </head>
@@ -41,15 +89,33 @@
             <div class="notification">
                 <h1 class="title"><a href="https://htmlreference.io/">https://htmlreference.io/</a></h1>
             </div>
+            
+            <div class="box">
+                <p class="subtitle"><a href="https://htmlreference.io/base/">Base</a> elements - 
+                <a href="#body">body</a> , <a href="#head">head</a> , <a href="#html">html</a> , <a href="#link">link</a>, <a href="#meta">meta</a> , <a href="#script">script</a>
+                </p>
+                <p class="subtitle"><a href="https://htmlreference.io/forms/">Forms</a> elements - 
+                <a href="#button">button</a> , <a href="#fieldset">fieldset</a> , <a href="#form">form</a> , <a href="#input">input</a> , <a href="#legend">legend</a> , <a href="#textarea">textarea</a>
+                </p>
+                <p class="subtitle"><a href="https://htmlreference.io/lists/">Lists</a> elements - 
+                <a href="#dd">dd</a> , <a href="#dl">dl</a> , <a href="#dt">dt</a> , <a href="#li">li</a> , <a href="#ol">ol</a> , <a href="#ul">ul</a>
+                </p>
+                <p class="subtitle"><a href="https://htmlreference.io/semantic/">Semantic</a> elements - 
+                <a href="#article">article</a> , <a href="#aside">aside</a> , <a href="#figcaption">figcaption</a> , <a href="#figure">figure</a> , <a href="#footer">footer</a> , <a href="#header">header</a> , <a href="#main">main</a> , <a href="#mark">mark</a> , <a href="#nav">nav</a> , <a href="#section">section</a> , <a href="#time">time</a>
+                </p>
+                <p class="subtitle"><a href="https://htmlreference.io/tables/">Tables</a> elements - 
+                <a href="#caption">caption</a> , <a href="#table">table</a> , <a href="#tbody">tbody</a> , <a href="#td">td</a> , <a href="#tfoot">tfoot</a> , <a href="#th">th</a> , <a href="#thead">thead</a> , <a href="#tr">tr</a>
+                </p>
+            </div>
         
-            <div class="notification">
+            <div class="box" id="a">
                 <h1 class="title"><a href="https://htmlreference.io/element/a/">a</a> - Anchor tag</h1>
                 <p class="subtitle">
                 Creates a link to a URL: a web page, a section within a page, an email address... Also called the anchor element, where the a comes from.<br>
                 <br>
                 <span class="required">href</span> - Defines the target of the link.<br>
                 <a href="https://htmlreference.io/element/a/">absolute URL</a><br>
-                <a href="#footer">#footer - target an element within the same page.</a><br>
+                <a href="#ftr">#ftr - target an element within the same page.</a><br>
                 <a href="mailto:hello@virendeveloper.com">You can use the mailto protocol. Clicking the link will open the user's email client.</a><br>
                 <br>
                 target - Defines in which tab or window the clicked link will show up.<br>
@@ -63,28 +129,124 @@
                 </p>
             </div>
             
-            <div class="notification">
+            <div class="box" id="abbr">
                 <h1 class="title"><a href="https://htmlreference.io/element/abbr/">abbr</a> - Abbreviation tag</h1>
                 <p class="subtitle">Defines an abbreviation, and usually includes its full description<br>
                 <abbr title="HyperText Markup Language">HTML</abbr>
                 </p>
             </div>
             
-            <div class="notification">
+            <div class="box" id="address">
                 <h1 class="title"><a href="https://htmlreference.io/element/address/">address</a></h1>
                 <p class="subtitle">Defines a block for contact information<br>
+                <div class="is-family-code">
                 <address>
                   Infinite Loop,<br>
                   Cupertino, CA<br>
                   95014, USA
                 </address>
+                </div>
+                </p>
+            </div>
+            
+            <div class="box" id="article">
+                <h1 class="title"><a href="https://htmlreference.io/element/article/">article</a></h1>
+                <p class="subtitle">
+                Defines a <b>self-contained</b> block of content that can exist in any context.<br>
+                It can have its own header, footer, sections...
+                Useful for a list of blog posts
+                </p>
+                <div class="example-preview">
+                	<div class="example-code">
+                        <figure class="highlight">
+                        <pre>
+<code class="language-html" data-lang="html">
+<span class="nt">&lt;article&gt;</span>
+  <span class="nt">&lt;header&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/my-blog-post"</span><span class="nt">&gt;</span>My blog post<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;section&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;footer&gt;</span>
+    <span class="nt">&lt;small&gt;</span>
+    Posted on <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2017-04-29T19:00"</span><span class="nt">&gt;</span>Apr 29<span class="nt">&lt;/time&gt;</span> in <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/category/code"</span><span class="nt">&gt;</span>Code<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code>
+                        </pre>
+                        </figure>
+                    </div>
+                    <div class="example-output">
+                        <article>
+                          <header>
+                            <h3>
+                              <a href="/my-blog-post">My blog post</a>
+                            </h3>
+                          </header>
+                          <section>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+                          </section>
+                          <footer>
+                            <small>
+                              Posted on <time datetime="2017-04-29T19:00">Apr 29</time> in <a href="/category/code">Code</a>
+                            </small>
+                          </footer>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box" id="aside">
+            	<h1 class="title"><a href="https://htmlreference.io/element/aside/">aside</a></h1>
+                <p class="subtitle">
+                Defines a block of content that is related to the main content. Displays as a sidebar usually.
+                </p>
+                <div class="example-preview">
+                    <div class="example-output">
+                        <main>
+                          <h1>My blog post</h1>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+                          <p>etc.</p>
+                        </main>
+                        <aside>
+                          <h3>About the author</h3>
+                          <p>Frontend Designer from Bordeaux, currently working for Improbable in sunny London.</p>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box" id="b">
+            	<h1 class="title"><a href="https://htmlreference.io/element/b/">b</a></h1>
+                <p class="subtitle">
+                Makes an element <b>bold.</b>
+                </p>
+            </div>
+            
+            <div class="box" id="body">
+            	<h1 class="title"><a href="https://htmlreference.io/element/body/">body</a></h1>
+                <p class="subtitle">
+                The container for a web page's content.<br>
+                Must be a dtrect child of <code>&lt;html&gt;</code>.<br>
+                Must be an ancestor of all HTML elements (except where noted).<br>
+                </p>
+            </div>
+            
+            <div class="box" id="br">
+            	<h1 class="title"><a href="https://htmlreference.io/element/br/">br</a></h1>
+                <p class="subtitle">
+                Defines a <b>line break</b> within a text.
                 </p>
             </div>
         
         </div>
     </section>
     
-    <footer class="footer" id="footer">
+    <footer class="footer" id="ftr">
       <div class="content has-text-centered">
         <p>
           <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
