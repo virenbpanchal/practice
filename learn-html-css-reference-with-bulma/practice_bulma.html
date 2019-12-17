@@ -66,6 +66,10 @@
 	.highlight .nt {
 		color: #f92672;
 	}
+	.example-output fieldset {
+		padding: 0.5em 1em 1em;
+		border: 1px solid #999;
+	}
 	</style>
 
 </head>
@@ -77,12 +81,12 @@
     <div class="box has-background-grey-lighter">
         <div align="center">
         <h2 class="title">
-        Learn HTML CSS reference with <strong><a href="https://bulma.io/">Bulma</a></strong>!
-        <br>
-        <a href="https://htmlreference.io/">https://htmlreference.io/</a>
+        Learn HTML CSS reference with <strong><a href="https://bulma.io/">Bulma</a></strong>!<br>
+        <a href="https://htmlreference.io/">https://htmlreference.io/</a><br>
         </h2>
         </div>
         <div align="right">
+        <b>MDN - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML elements reference</a></b><br>
         <b>Tools :-</b>
         (1) - <a href="https://www.textfixer.com/html/html-character-encoding.php" target="_blank">HTML Character Encoder</a><br>
         </div>
@@ -180,7 +184,7 @@
                         <div class="box">
                         <strong>href</strong> - Defines the URL of the link. - You can pass an <b>absolute URL.</b><br>
                         <code>href="https://htmlreference.io/css/website.css"</code> - You can pass a URL <b>relative to the root domain.</b><br>
-                        <code>href="/css/website.css"</code>
+                        <code>href="/css/website.css"</code><br>
                         </div>
                         <div class="box">
                         <strong>rel</strong> - Defines a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types">link type</a>, explaining how the link relates to the current web page.<br>
@@ -192,7 +196,7 @@
                         <div class="box">
                         <strong>type</strong> - Defines the type of the linked resource.<br>
                         <code>type="text/css"</code> - The link is a CSS file.<br>
-                        <code>type="text/html"</code> - The link is an HTML document.
+                        <code>type="text/html"</code> - The link is an HTML document.<br>
                         </div>
                     </div>
                 </div>
@@ -230,23 +234,23 @@
                     <div class="content">
                         <div class="box">
                         <strong>charset</strong> - Defines the character encoding for the whole web page.<br>
-                        <code>charset="UTF-8"</code> - The value must be a valid <a href="https://www.iana.org/assignments/character-sets/character-sets.xhtml">character set</a>.
+                        <code>charset="UTF-8"</code> - The value must be a valid <a href="https://www.iana.org/assignments/character-sets/character-sets.xhtml">character set</a>.<br>
                         </div>
                         <div class="box">
                         <strong>http-equiv</strong> - Defines meta rules for the web page.<br>
                         <code>http-equiv="Content-Security-Policy"</code> - Defines a link to a web page's <a href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/CSP_policy_directives">content policies</a>.<br>
                         <code>http-equiv="refresh"</code> - Allows to refresh the web page every N seconds, or even redirect to another URL.<br>
-                        <code>http-equiv="X-UA-Compatible"</code> - Defines which Internet Explorer verison the web page should be rendered as.
+                        <code>http-equiv="X-UA-Compatible"</code> - Defines which Internet Explorer verison the web page should be rendered as.<br>
                         </div>
                         <div class="box">
                         <strong>name</strong> - Defines additional information attached to the web page.<br>
                         <code>name="viewport"</code> - Defines dimension and scaling rules for the viewport.<br>
-                        <code>name="theme-color"</code> - Defines a theme color which can be used by the browser or the operating system.
+                        <code>name="theme-color"</code> - Defines a theme color which can be used by the browser or the operating system.<br>
                         </div>
                         <div class="box">
                         <strong>content</strong> - Defines the content of the metadata. This varies according to the <code>name</code> or <code>http-equiv</code> value.<br>
                         <code>content="width=device-width, initial-scale=1"</code> - For the <code>viewport</code> metadata, you can specify the width and initial scale of the web page.<br>
-                        <code>content="2; url=https://cssreference.io"</code> - For the <code>refresh</code> metadata, you can specify how many seconds to wait before redirecting to another URL.
+                        <code>content="2; url=https://cssreference.io"</code> - For the <code>refresh</code> metadata, you can specify how many seconds to wait before redirecting to another URL.<br>
                         </div>
                     </div>
                 </div>
@@ -279,14 +283,402 @@
                     <div class="content">
                         <div class="box">
                         <strong>src</strong> - Defines the source of the external script.<br>
-                        <code>src="/javascript/my-script.js"</code> - The URL can be relative or absolute.
+                        <code>src="/javascript/my-script.js"</code> - The URL can be relative or absolute.<br>
                         </div>
                         <div class="box">
                         <strong>type</strong> - Defines the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">MIME type</a> of the external script.<br>
-                        <code>type="text/javascript"</code> - This is for .js files.
+                        <code>type="text/javascript"</code> - This is for .js files.<br>
                         </div>
                         <div class="box">
                         <strong>async (No value required.)</strong> - Allows the external script to be loaded asynchronously.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <!--Forms-->
+    <div class="box">
+        <h1 class="title has-background-light" id="forms"><a href="https://htmlreference.io/forms/">Forms elements</a></h1>
+        <div class="is-block">
+        	
+            <!--button-->
+            <div class="box">
+            	<div class="columns">
+                	<h1 class="title" id="button"><a href="https://htmlreference.io/element/button/">button</a></h1>
+                    <div class="column">
+                    - Defines a clickable <strong>button</strong>.
+                    </div>
+                </div>
+                <div class="block">
+                	<div class="content">
+                        <div class="box">
+                        <strong>name</strong> - Defines the unique identifier for that button within the form. It allows the server to access each button's value when submitted.<br>
+                        <code>name="submit_button"</code><button name="submit_button">Submit form (name = submit_button)</button><br>
+                        - The name value must be unique within the context of a <code>&lt;form&gt;</code> container.<br>
+                        - It can only contain alphanumeric characters <code>a-z</code> <code>A-Z</code> <code>0-9</code> and some special characters like <code>-</code> <code>_</code>… but no space.<br>
+                        </div>
+                        <div class="box">
+                        <strong>value</strong> - the value sent to the server when submitting the form.<br>
+                        <code>value="primary"</code><button value="primary">Submit form (value = primary)</button> - The server will receive the value primary.<br>
+                        </div>
+                        <div class="box">
+                        <strong>type</strong> - Defines the button type.<br>
+                        <code>type="submit"</code><button type="submit">Submit</button> - The button sends the form data to the server.<br>
+                        <code>type="reset"</code><button type="reset">Reset</button> - The button resets the form.<br>
+                        </div>
+                        <div class="box">
+                        <strong>disabled (No value required.)</strong> - Disables the button.<br>
+                        <code>&lt;button disabled=""&gt;Submit form (disabled)&lt;/button&gt;</code><button disabled>Submit form (disabled)</button><br>
+                        </div>
+                        <div class="box">
+                        <strong>autofocus (No value required.)</strong> - Sets focus on the element when the web page loads.<br>
+                        <code>&lt;button autofocus&gt;Submit form (autofocus)&lt;/button&gt;</code><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--form, fieldset, legend-->
+            <div class="box">
+                <div class="columns">
+                    <h1 class="title" id="form"><a href="https://htmlreference.io/element/form/">form</a></h1>
+                    <div class="column">
+                    - Defines an <strong>interactive form</strong> with controls.
+                        <div class="box">
+                        <strong>action</strong> - Defines which URL the form's information is sent to when submitted.<br>
+                        <code>action="/contact"</code> - You can use a <strong>relative</strong> URL.<br>
+                        <code>action="https://htmlreference.io/contact"</code> - You can use an <strong>absolute</strong> URL.<br>
+                        </div>
+                        <div class="box">
+                        <strong>method</strong> - Defines the HTTP method used when submitting the form.<br>
+                        <code>method="post"</code> - The form information is sent to the server as part of the <strong>request body</strong>.<br>
+                        <code>method="get"</code> - The form information is sent to the server as part <strong>URL parameters</strong>: <code>/contact?first_name=Alex&amp;last_name=Smith</code>.<br>
+                        </div>
+                        <div class="box">
+                        <strong>name</strong> - The form's name when sent to the server. Useful when multiple forms are present on the same web page.<br>
+                        <code>name="sign_up_form"</code> - The name value must be unique within the context of the whole web page.<br>
+                        - It can only contain alphanumeric characters <code>a-z</code> <code>A-Z</code> <code>0-9</code> and some special characters like <code>-</code> <code>_</code>… but no space.<br>
+                        </div>
+                        <div class="box">
+                        <strong>autocomplete</strong> - Determines if the browser can autocomplete all the form's controls.<br>
+                        <code>autocomplete="off"</code> - The browser will <strong>disable</strong> autocomplete functions. This can however be overriden for each control individually.<br>
+                        <code>autocomplete="on"</code> - The browser will <strong>enable</strong> autocomplete functions. This can however be overriden for each control individually.<br>
+                        - Try pressing "down" in input. It will show previously entered email addresses.<br>
+                        </div>
+                        <div class="box">
+                        <strong>target</strong> - Defines in which tab or window the clicked link will show up.<br>
+                        <code>target="_blank"</code> - Opens in a new browsing context, which is usually a <strong>new tab</strong>.<br>
+                        <code>target="_self"</code> - Opens in the current tab.<br>
+                        <code>target="_parent"</code> - Opens in the parent browsing context, or <code>_self</code> is there is none.<br>
+                        <code>target="_top"</code> - Opens in the top browsing context, or <code>_self</code> is there is none.<br>
+                        </div>
+                        <div class="box">
+                        <strong>enctype</strong> - Defines the <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">MIME type</a> of the information sent to the server. Only works if the method is <code>post</code>.<br>
+                        <code>enctype="application/x-www-form-urlencoded"</code> - The <strong>default</strong> value.<br>
+                        <code>enctype="text/plain"</code> - For HTML5 plain text.<br>
+                        <code>enctype="multipart/form-data"</code> - Needed when using an <code>&lt;input type="file"&gt;</code> element.<br>
+                        </div>
+                        <div class="box">
+                        <strong>novalidate (No value required.)</strong> - Tells the browser to not validate the form on submission.<br>
+                        <code>&lt;form novalidate=""&gt;</code><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <h1 class="title" id="fieldset"><a href="https://htmlreference.io/element/fieldset/">fieldset</a></h1>
+                    <div class="column">
+                    - Defines a <strong>group of controls</strong> within a form.
+                    </div>
+                </div>
+                <div class="columns">
+                    <h1 class="title" id="legend"><a href="https://htmlreference.io/element/legend/">legend</a></h1>
+                    <div class="column">
+                    - Defines a <strong>caption</strong> for a parent's content.
+                    </div>
+                </div>
+                <div class="block example">
+                    <div class="example-preview">
+                        <div class="example-code">
+                            <figure class="highlight">
+                            <pre>
+                            <code class="language-html" data-lang="html">
+    &lt;form action="" method=""&gt;
+     &lt;fieldset&gt;
+     &lt;legend&gt;Sign up Form&lt;/legend&gt;
+     &lt;p&gt;
+     &lt;label&gt;Email&lt;/label&gt;&lt;br&gt;
+     &lt;input type="email" name="email" required&gt;
+     &lt;/p&gt;
+     &lt;p&gt;
+     &lt;label&gt;Password&lt;/label&gt;&lt;br&gt;
+     &lt;input type="password" name="password"&gt;
+     &lt;/p&gt;
+     &lt;p&gt;
+     &lt;button&gt;Sign up&lt;/button&gt;
+     &lt;button type="reset"&gt;Reset form&lt;/button&gt;
+     &lt;/p&gt;
+     &lt;/fieldset&gt;
+    &lt;/form&gt;
+                            </code>
+                            </pre>
+                            </figure>
+                        </div>
+                        <div class="example-output">
+                            <form action="" method="">
+                              <fieldset>
+                                <legend>Sign up Form</legend>
+                                <p>
+                                  <label>Email</label><br>
+                                  <input type="email" name="email" required>
+                                </p>
+                                <p>
+                                  <label>Password</label><br>
+                                  <input type="password" name="password">
+                                </p>
+                                <p>
+                                  <button>Sign up</button>
+                                  <button type="reset">Reset form</button>
+                                </p>
+                              </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--input-->
+            <div class="box">
+                <div class="columns">
+                    <h1 class="title" id="input"><a href="https://htmlreference.io/element/input/">input</a></h1>
+                    <div class="column">
+                    - Defines an <strong>interactive control</strong> within a web form.
+                        <div class="box">
+                        <strong class="required">type</strong> - <span class="required">Required.</span> - Defines the type of form input.<br>
+                        <code>type="text"</code> - Simple single line text input that accepts any type of character<br>
+                        <code>type="email"</code> - Like a text input, but the browser will try to <strong>only allow valid email addresses</strong>.<br>
+                        - On mobile devices, the email keyboard will show up.<br>
+                        <code>type="number"</code> - Like a text input, but the browser will try to <strong>only allow valid numbers</strong>.<br>
+                        - On mobile devices, the number keyboard will show up.<br>
+                        <code>type="checkbox"</code> - A toggle checkbox that can only be one of two states: checked or unchecked. The value is only submitted by the form if the checkbox is checked.<br>
+                        - You can wrap a checkbox in a label, to increase the click area.
+                        <label>
+                          <input type="checkbox">
+                          I accept the terms and conditions
+                        </label>
+<!--<div class="example-code">
+&lt;label&gt;
+ &lt;input type="checkbox"&gt;
+ I accept the terms and conditions
+&lt;/label&gt;
+</div>-->
+                        <br>
+                        <code>type="radio"</code> - Needs to be used used in combination with other radio buttons, so that they are mutually exclusive.<br>
+                        - You link radio buttons through a similar <code>name</code> value:<br>
+                        - Notice how clicking one deselects the other.<br>
+                        <code>type="submit"</code> - Submit button that is triggered when clicked or when pressing Enter.<br>
+                        </div>
+                        <div class="box">
+                        <strong class="required">name</strong> - <span class="required">Required.</span> - Defines the unique identifier for that input within the form. It allows the server to access each input's value when submitted.<br>
+                        <code>name="first_name"</code> - The name value must be unique within the context of a <code>&lt;form&gt;</code> container.<br>
+                        - It can only contain alphanumeric characters <code>a-z</code> <code>A-Z</code> <code>0-9</code> and some special characters like <code>-</code> <code>_</code>… but no space.<br>
+                        </div>
+                        <div class="box">
+                        <strong>placeholder</strong> - Defines a non-selectable placeholder text that only appears when the input is empty.<br>
+                        <code>placeholder="e.g. alex@smith.com"</code> - You can hint at the format expected for the input.<br>
+                        - As a best practice, it is recommended to have a label to describe the input, and use the placeholder to showcase an example:<br>
+                        </div>
+                        <div class="box">
+                        <strong>required (No value required.)</strong> - Tells the browser that this input is <strong>required</strong>. Leaving it empty will show a warning.<br>
+                        - The browser should show a warning if you try to submit the form with an empty input.<br>
+                        </div>
+                        <div class="box">
+                        <strong>disabled (No value required.)</strong> - Disables the input.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--textarea-->
+            <div class="box">
+                <div class="columns">
+                    <h1 class="title" id="textarea"><a href="https://htmlreference.io/element/textarea/">textarea</a></h1>
+                    <div class="column">
+                    - Defines a <strong>multi-line text control</strong> within a web form.
+                        <div class="box">
+                        <strong class="required">name</strong> - <span class="required">Required.</span> - Defines the unique identifier for that textarea within the form. It allows the server to access each textarea's value when submitted.<br>
+                        <code>name="message"</code> - The name value must be unique within the context of a <code>&lt;form&gt;</code> container.<br>
+                        - It can only contain alphanumeric characters <code>a-z</code> <code>A-Z</code> <code>0-9</code> and some special characters like <code>-</code> <code>_</code>… but no space.<br>
+                        </div>
+                        <div class="box">
+                        <strong>autocomplete</strong> - Determines if the browser can autocomplete the textarea.<br>
+                        <code>autocomplete="off"</code> - The browser will <strong>disable</strong> autocomplete functions..<br>
+                        <code>autocomplete="on"</code> - The browser will <strong>enable</strong> autocomplete functions.<br>
+                        </div>
+                        <div class="box">
+                        <strong>minlength</strong> - Defines the minimum amount of characters the textarea required to be valid.<br>
+                        <code>minlength="15"</code> - You can use <strong>integers</strong>.<br>
+                        </div>
+                        <div class="box">
+                        <strong>maxlength</strong> - Defines the maxlength amount of characters allowed.<br>
+                        <code>maxlength="140"</code> - You can use <strong>integers</strong>.<br>
+                        </div>
+                        <div class="box">
+                        <strong>placeholder</strong> - Defines a non-selectable placeholder text that only appears when the textarea is empty.<br>
+                        <code>placeholder="e.g. Hello my name is Alex"</code> - You can hint at the format expected for the textarea.<br>
+                        </div>
+                        <div class="box">
+                        <strong>cols</strong> - Defines the number of columns.<br>
+                        <code>cols="40"</code> - You can use <strong>integers</strong>.<br>
+                        </div>
+                        <div class="box">
+                        <strong>rows</strong> - Defines the number of rows.<br>
+                        <code>rows="5"</code> - You can use <strong>integers</strong>.<br>
+                        </div>
+                        <div class="box">
+                        <strong>wrap</strong> - Defines how the text should be wrapped.<br>
+                        <code>wrap="hard"</code> - The text will always be wrapped depending on the <code>cols</code> value.<br>
+                        <code>wrap="soft"</code> - The text will only break when needed.<br>
+                        </div>
+                        <div class="box">
+                        <strong>disabled (No value required.)</strong> - Disables the textarea.<br>
+                        </div>
+                        <div class="box">
+                        <strong>required (No value required.)</strong> - Tells the browser that this textarea is <strong>required</strong>. Leaving it empty will show a warning.<br>
+                        </div>
+                        <div class="box">
+                        <strong>autofocus (No value required.)</strong> - Sets focus on the textarea when the web page loads.<br>
+                        </div>
+                        <div class="box">
+                        <strong>readonly (No value required.)</strong> - Turns the textarea into a read-only element.<br>
+                        </div>
+                        <div class="box">
+                        <strong>spellcheck (No value required.)</strong> - Enables the browser spell checker.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!--Lists-->
+    <div class="box">
+        <h1 class="title has-background-light" id="lists"><a href="https://htmlreference.io/lists/">Lists elements</a></h1>
+        <div class="is-block">
+        
+            <!--dd, dl, dt-->
+            <div class="box">
+                <div class="columns">
+                    <h1 class="title" id="dd"><a href="https://htmlreference.io/element/dd/">dd</a></h1>
+                    <div class="column">
+                    - Defines an item in a <strong>definition list</strong>.
+                    </div>
+                </div>
+                <div class="columns">
+                    <h1 class="title" id="dl"><a href="https://htmlreference.io/element/dl/">dl</a></h1>
+                    <div class="column">
+                    - Defines a <strong>definition list</strong>.
+                    </div>
+                </div>
+                <div class="columns">
+                    <h1 class="title" id="dt"><a href="https://htmlreference.io/element/dt/">dt</a></h1>
+                    <div class="column">
+                    - Defines a <strong>definition term</strong>.
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="example-preview">
+                        <div class="example-code">
+                            <figure class="highlight">
+                            <pre>
+                            <code class="language-html" data-lang="html">
+    &lt;dl&gt;
+     &lt;dt&gt;Web&lt;/dt&gt;
+     &lt;dd&gt;The part of the Internet that contains websites and web pages&lt;/dd&gt;
+     &lt;dt&gt;HTML&lt;/dt&gt;
+     &lt;dd&gt;A markup language for creating web pages&lt;/dd&gt;
+     &lt;dt&gt;CSS&lt;/dt&gt;
+     &lt;dd&gt;A technology to make HTML look better&lt;/dd&gt;
+    &lt;/dl&gt;
+                            </code>
+                            </pre>
+                            </figure>
+                        </div>
+                        <div class="example-output">
+                            <dl>
+                              <dt>Web</dt>
+                              <dd>The part of the Internet that contains websites and web pages</dd>
+                              <dt>HTML</dt>
+                              <dd>A markup language for creating web pages</dd>
+                              <dt>CSS</dt>
+                              <dd>A technology to make HTML look better</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--li, ol, ul-->
+            <div class="box">
+                <div class="columns">
+                    <h1 class="title" id="li"><a href="https://htmlreference.io/element/li/">li</a></h1>
+                    <div class="column">
+                    - Defines a <strong>list item</strong> within an ordered list <code>&lt;ol&gt;</code> or unordered list <code>&lt;ul&gt;</code>.
+                    </div>
+                </div>
+                <div class="columns">
+                    <h1 class="title" id="ol"><a href="https://htmlreference.io/element/ol/">ol</a></h1>
+                    <div class="column">
+                    - Defines an <strong>ordered list</strong>.
+                        <div class="box">
+                        <strong>type</strong> - Defines how the list is numbered.<br>
+                        <code>type="1"</code> - <strong>Default.</strong> Uses numbers.
+                        <code>type="a"</code> - Uses lowercase letters.
+                        <code>type="A"</code> - Uses uppercase letters.
+                        <code>type="i"</code> - Uses lowercase Roman numerals.
+                        <code>type="I"</code> - Uses uppercase Roman numerals.
+                        </div>
+                        <div class="box">
+                        <strong>start</strong> - Defines a number to start the list with.<br>
+                        <code>start="3"</code> - You can use any <strong>integer</strong>.
+                        </div>
+                        <div class="box">
+                        <strong>reversed (No value required.)</strong> - Reverses the order of the list.<br>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <h1 class="title" id="ul"><a href="https://htmlreference.io/element/ul/">ul</a></h1>
+                    <div class="column">
+                    - Defines an <strong>unordered list</strong>.
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="example-preview">
+                        <div class="example-code">
+                            <figure class="highlight">
+                            <pre>
+                            <code class="language-html" data-lang="html">
+    &lt;ol&gt;
+     &lt;li&gt;Step one&lt;/li&gt;
+     &lt;li&gt;Step two&lt;/li&gt;
+     &lt;li&gt;????&lt;/li&gt;
+     &lt;li&gt;PROFIT!!!&lt;/li&gt;
+    &lt;/ol&gt;
+                            </code>
+                            </pre>
+                            </figure>
+                        </div>
+                        <div class="example-output">
+                            <ol>
+                              <li>Step one</li>
+                              <li>Step two</li>
+                              <li>????</li>
+                              <li>PROFIT!!!</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
@@ -646,129 +1038,6 @@
         </div>
     </div>
     
-    <!--Lists-->
-    <div class="box">
-        <h1 class="title has-background-light" id="lists"><a href="https://htmlreference.io/lists/">Lists elements</a></h1>
-        <div class="is-block">
-        
-            <!--dd, dl, dt-->
-            <div class="box">
-                <div class="columns">
-                    <h1 class="title" id="dd"><a href="https://htmlreference.io/element/dd/">dd</a></h1>
-                    <div class="column">
-                    - Defines an item in a <strong>definition list</strong>.
-                    </div>
-                </div>
-                <div class="columns">
-                    <h1 class="title" id="dl"><a href="https://htmlreference.io/element/dl/">dl</a></h1>
-                    <div class="column">
-                    - Defines a <strong>definition list</strong>.
-                    </div>
-                </div>
-                <div class="columns">
-                    <h1 class="title" id="dt"><a href="https://htmlreference.io/element/dt/">dt</a></h1>
-                    <div class="column">
-                    - Defines a <strong>definition term</strong>.
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="example-preview">
-                        <div class="example-code">
-                            <figure class="highlight">
-                            <pre>
-                            <code class="language-html" data-lang="html">
-    &lt;dl&gt;
-     &lt;dt&gt;Web&lt;/dt&gt;
-     &lt;dd&gt;The part of the Internet that contains websites and web pages&lt;/dd&gt;
-     &lt;dt&gt;HTML&lt;/dt&gt;
-     &lt;dd&gt;A markup language for creating web pages&lt;/dd&gt;
-     &lt;dt&gt;CSS&lt;/dt&gt;
-     &lt;dd&gt;A technology to make HTML look better&lt;/dd&gt;
-    &lt;/dl&gt;
-                            </code>
-                            </pre>
-                            </figure>
-                        </div>
-                        <div class="example-output">
-                            <dl>
-                              <dt>Web</dt>
-                              <dd>The part of the Internet that contains websites and web pages</dd>
-                              <dt>HTML</dt>
-                              <dd>A markup language for creating web pages</dd>
-                              <dt>CSS</dt>
-                              <dd>A technology to make HTML look better</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!--li, ol, ul-->
-            <div class="box">
-                <div class="columns">
-                    <h1 class="title" id="li"><a href="https://htmlreference.io/element/li/">li</a></h1>
-                    <div class="column">
-                    - Defines a <strong>list item</strong> within an ordered list <code>&lt;ol&gt;</code> or unordered list <code>&lt;ul&gt;</code>.
-                    </div>
-                </div>
-                <div class="columns">
-                    <h1 class="title" id="ol"><a href="https://htmlreference.io/element/ol/">ol</a></h1>
-                    <div class="column">
-                    - Defines an <strong>ordered list</strong>.
-                    <div class="box">
-                    <strong>type</strong> - Defines how the list is numbered.<br>
-                    <code>type="1"</code> -  <strong>Default.</strong> Uses numbers.
-                    <code>type="a"</code> - Uses lowercase letters.
-                    <code>type="A"</code> - Uses uppercase letters.
-                    <code>type="i"</code> - Uses lowercase Roman numerals.
-                    <code>type="I"</code> - Uses uppercase Roman numerals.
-                    </div>
-                    <div class="box">
-                    <strong>start</strong> - Defines a number to start the list with.<br>
-                    <code>start="3"</code> - You can use any <strong>integer</strong>.
-                    </div>
-                    <div class="box">
-                    <strong>reversed (No value required.)</strong> - Reverses the order of the list.<br>
-                    </div>
-                    </div>
-                </div>
-                <div class="columns">
-                    <h1 class="title" id="ul"><a href="https://htmlreference.io/element/ul/">ul</a></h1>
-                    <div class="column">
-                    - Defines an <strong>unordered list</strong>.
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="example-preview">
-                        <div class="example-code">
-                            <figure class="highlight">
-                            <pre>
-                            <code class="language-html" data-lang="html">
-    &lt;ol&gt;
-     &lt;li&gt;Step one&lt;/li&gt;
-     &lt;li&gt;Step two&lt;/li&gt;
-     &lt;li&gt;????&lt;/li&gt;
-     &lt;li&gt;PROFIT!!!&lt;/li&gt;
-    &lt;/ol&gt;
-                            </code>
-                            </pre>
-                            </figure>
-                        </div>
-                        <div class="example-output">
-                            <ol>
-                              <li>Step one</li>
-                              <li>Step two</li>
-                              <li>????</li>
-                              <li>PROFIT!!!</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-
 </section>
 
 <section class="section">
@@ -781,7 +1050,7 @@
             </p>
             <div class="content">
                 <div class="box">
-                <strong class="required">href</strong> - Defines the target of the link. - <span class="required">Required.</span><br>
+                <strong class="required">href</strong> - <span class="required">Required.</span> - Defines the target of the link.<br>
                 <code>href="https://htmlreference.io"</code> - You can pass an absolute URL. <a href="https://htmlreference.io/element/a/">absolute URL</a><br>
                 <code>href="#collections"</code> - You can target an element within the same page. Here, we target the element <code>&lt;div id="collections"&gt;</code> <a href="#collections">collections</a><br>
                 <code>href="mailto:hello@virendeveloper.com"</code> - You can use the mailto protocol. Clicking the link will open the user's email client. <a href="mailto:hello@virendeveloper.com">Contact me</a><br>
@@ -838,38 +1107,6 @@
             <p class="subtitle">
             Defines a <b>line &lt;br&gt;<br> break</b> within a text.
             </p>
-        </div>
-        
-        <div class="box" id="button">
-            <h1 class="title"><a href="https://htmlreference.io/element/button/">button</a></h1>
-            <p class="subtitle">
-            Defines a clickable button.
-            </p>
-            <div class="content">
-                <div class="box">
-                <strong>name</strong> - Defines the unique identifier for that button within the form. It allows the server to access each button's value when submitted.<br>
-                The name value must be unique within the context of a &lt;form&gt; container.<br>
-                It can only contain alphanumeric characters a-z A-Z 0-9 and some special characters like - _… but no space.<br>
-                <button name="submit_button">Submit form (name = submit_button)</button>
-                </div>
-                <div class="box">
-                <strong>value</strong> - the value sent to the server when submitting the form.<br>
-                <button value="primary">Submit form (value = primary)</button> - The server will receive the value primary.
-                </div>
-                <div class="box">
-                <strong>type</strong> - Defines the button type.<br>
-                <button type="submit">Submit</button> - The button sends the form data to the server.<br>
-                <button type="reset">Reset</button> - The button resets the form.
-                </div>
-                <div class="box">
-                <strong>disabled (No value required.)</strong> - Disables the button.<br>
-                <button disabled>Submit form (disabled)</button>
-                </div>
-                <div class="box">
-                <strong>autofocus (No value required.)</strong> - Sets focus on the element when the web page loads.<br>
-                <code>&lt;button autofocus&gt;Submit form (autofocus)&lt;/button&gt;</code>
-                </div>
-            </div>
         </div>
         
         <div class="box" id="caption">
